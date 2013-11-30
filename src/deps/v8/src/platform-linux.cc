@@ -220,9 +220,10 @@ bool OS::ArmUsingHardFloat() {
 #elif defined(__ARM_PCS) || defined(__SOFTFP) || !defined(__VFP_FP__)
   return false;
 #else
-#error "Your version of GCC does not report the FP ABI compiled for."          \
-       "Please report it on this issue"                                        \
-       "http://code.google.com/p/v8/issues/detail?id=2140"
+  return false;
+//#error "Your version of GCC does not report the FP ABI compiled for."          \
+//       "Please report it on this issue"                                        \
+//       "http://code.google.com/p/v8/issues/detail?id=2140"
 
 #endif
 #endif
