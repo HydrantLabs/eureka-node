@@ -3,5 +3,5 @@
 cd "$(dirname "$0")"
 
 cd build/
-zip -FSr ../package.zip node/*
+zip --symlinks -FSr ../package.zip node/*
 cd ..
