@@ -12,7 +12,7 @@ export CXX="${HOST}-g++"
 export PS1="[${HOST}] \w$ "
 
 cd src
-./configure --dest-cpu=arm --dest-os=linux --without-snapshot
+./configure --dest-cpu=arm --dest-os=linux --without-snapshot --prefix=/system/usr/
 make -j 2
 mkdir -p ../build/node/destdir
 make install DESTDIR=../build/node/destdir
