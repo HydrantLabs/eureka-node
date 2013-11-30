@@ -1,3 +1,3 @@
 #!/bin/sh -e
 
-rm -rf build/system
+rm -rf build/node/destdir
